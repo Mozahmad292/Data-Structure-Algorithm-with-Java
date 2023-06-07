@@ -1,0 +1,17 @@
+class test110_Reverse_and_Shift_an_Array{
+  static int [] a={1,2,3,4,5,6};
+  
+  public static void main(String[]args){
+    f(a);
+  }
+  
+  static void f(int []a){
+  int[] b=new int[a.length];
+  
+  for(int i=0; int j=a.length; i<a.length; i++; j--){
+  b[i]=a[j];
+  }
+  
+  }
+  
+}
