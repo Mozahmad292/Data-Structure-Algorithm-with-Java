@@ -1,0 +1,18 @@
+class test121_122{
+  public static void main(String[]args){
+    int[] a={6,7,8,10,11,12,15};
+    missing_ele(a);
+  }
+  
+  static void missing_ele(int[] a){
+    int diff=a[0]-0  // a[i]-i
+      for(int i=1;i<a.length;i++){
+      if(a[i]-i != diff){
+        while(diff < a[i]-i){
+        System.out.print(diff+i);
+        diff++;
+        }
+      }
+    }
+  }
+}

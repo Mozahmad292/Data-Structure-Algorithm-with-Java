@@ -1,0 +1,18 @@
+//Taylor series using Horners rule/optimization
+class test69{
+  public static void main(String[] args){
+    System.out.println(e(1,20)); //e is just method name; e(1,10) means compute value of e^1 by considering first 10 terms of the series
+  }
+  
+  static double e(int x,int n){
+    n--;
+    int i=n;
+    int sum=1+x/i; 
+    i--;
+    while(i>0){
+    sum*=1+x/i;
+    i--;
+    }
+    return sum;
+  }
+}

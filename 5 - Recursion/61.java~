@@ -1,0 +1,8 @@
+//61 - Sum of Natural Number using Recursion
+import java.util.Scanner;
+class 61{
+  public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+    method(sc.nextInt());
+  }
+}

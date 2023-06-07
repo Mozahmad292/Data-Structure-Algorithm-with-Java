@@ -1,0 +1,40 @@
+//prints all the permutations of a string 
+// ex : abc  : abc,acb,bac,bca,cab,cba  :total n! strings =3! =6 strings
+class test141_permutation{
+  static int[] a;
+  static char[] res;
+  
+  public static void main(String[] args){
+    
+    String ST= "abc";
+    char[] s=ST.toCharArray();
+    a=new int[s.length];
+    res=new char[s.length];
+    int k=0;
+    
+    perm(s,k);
+  }
+  
+  
+  static void perm(char[] s,int k){
+    int i;
+    
+    if(k==res.length){
+      String result = new String(res);//making res(char array) to a String
+      System.out.println(result);// result=string : abc, acb,bac etc
+    }
+    else{
+      for(i=0;i<a.length;i++){
+        if(a[i]==0){
+        res[k]=s[i];
+        a[i]=1;
+        perm(s,k+1);
+        a[i]=0;
+        }
+      }
+      
+    }
+  
+  }
+  
+}

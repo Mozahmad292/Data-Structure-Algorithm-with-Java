@@ -1,0 +1,25 @@
+//missing_ele() : prints missing elements in an unsorted set : printing sequencial missing elements
+// in :{3,5,6,9,2}  out : 4 7 8
+
+class test121_122_missing_ele2{
+  public static void main(String[]args){
+    int[] a={3,5,6,9,2};
+    int starting=2, ending=9;  // starting and ending element
+    missing_ele_un(a,starting,ending);
+  }
+  
+  static void missing_ele_un(a,int s, int e){
+    int[] b=new int[e+1]; // last index=9
+    
+    for(int i=0;i<a.length;i++){
+      b[a[i]]= -1; // these elements are there=not missing elements
+    }
+    
+    for(int i=0;i<b.length;i++){
+      if(b[i]==0){
+        System.out.print(i+" ");
+      }
+    }
+  }
+  
+}
