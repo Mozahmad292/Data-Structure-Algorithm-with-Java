@@ -4,4 +4,4 @@
 
 The Courses- "Mastering Data Structures & Algorithms using C and C++" is conducted by the Famous Instructor Abdul Bari and C/C++ language is used. But I have been solving(Running) each and every problem with JAVA instead C\C++.
 
-The Other Course-"Data Structures and Algorithms: Deep Dive Using Java" helped me in understanding the procedure better in JAVA.
+The Other Course-"Data Structures and Algorithms: Deep Dive Using Java" helped me in understanding the procedures better in JAVA.
