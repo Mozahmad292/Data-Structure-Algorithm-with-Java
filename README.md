@@ -1,4 +1,4 @@
-## Object-Oriented-Programming-JAVA
+## Object-Oriented-Programming
 
 **Most of the the codes/problem solving inside this directory are develped following this course in udemy.com(but in JAVA) : https://www.udemy.com/course/datastructurescncpp/?kw=data+structure+and+algorithm&src=sac along with https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java/**
 
