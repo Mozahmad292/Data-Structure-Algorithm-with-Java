@@ -1,0 +1,27 @@
+//properties : an in place algo. , stable algo.
+//my implementation
+public class BubbleSort {
+  public static void main(String[] args) {
+    int[] a = {20,35,-15,7,55,1,-22};
+    bubbleSort(a);
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+  }
+  
+  static int [] bubbleSort(int[] a){
+    int unsorted_index=a.length;
+    int temp=-1;
+    for(int i=0;i<a.length;i++){
+      for(int j=0;j<unsorted_index-1;j++){
+        if(a[j]>a[j+1]){
+          temp=a[j];
+          a[j]=a[j+1];
+          a[j+1]=temp;
+        }
+      }
+      unsorted_index--;
+    }
+    return a;
+  }
+}
