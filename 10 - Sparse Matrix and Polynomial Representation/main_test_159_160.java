@@ -10,7 +10,6 @@ public class main_test_159_160{
     int n=sc.nextInt();
     System.out.println();
     
-    
     test_159_160 obj= new test_159_160(m,n);
     test_159_160 obj1= new test_159_160(m,n);
       
@@ -28,10 +27,6 @@ public class main_test_159_160{
     
     obj.set_total_elements();
     obj.tmp();
-    
-    
-    
-    
     
   }
   
