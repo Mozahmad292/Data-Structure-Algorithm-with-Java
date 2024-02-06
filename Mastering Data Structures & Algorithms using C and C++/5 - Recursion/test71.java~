@@ -1,0 +1,12 @@
+//compute taylor series using loop:iterative method
+//my implementation
+//taylor series : compute the value of e^x upto n terms.(the more terms you compute, the more accurate answer comes
+class test71{
+  public static void main(String[] args){
+    System.out.println(e(int x,int n)); // e is just method name
+  }
+  
+  static double e(int x,int n){
+    
+  }
+}

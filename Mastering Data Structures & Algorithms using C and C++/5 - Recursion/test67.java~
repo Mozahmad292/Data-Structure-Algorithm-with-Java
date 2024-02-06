@@ -1,0 +1,11 @@
+//taylor series : compute the value of e^x upto n terms.(the more terms you compute, the more accurate answer comes
+//compute taylor series using recursion
+//m..
+class test67{
+  public static void main(String[] args){
+   e(1,10)); //e is just method name; e(1,10) means compute value of e^1 by considering first 10 terms
+  }
+  static double e(int x, int n){
+  
+  }
+  }
