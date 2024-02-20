@@ -1,0 +1,41 @@
+// 2nd part: 2 virtual lists in a single array,,, sort and merge
+//sorting algorithm
+class Sort_Merge_2_virtual_array_from_a_array{
+  public static void main(String[] args){
+    int[]a= {2,5,8,12,3,6,7,10}; 
+    //int[]a= {-233,0,2,14,90,166};
+    int low=0, high=a.length-1;//
+    int mid=(low+high)/2;
+    int[] cc=merging(a,low,mid,high);
+    //printing just
+    for(int i=low;i<=high;i++){
+      System.out.println(cc[i]);
+    }
+  }
+  
+  static int[] merging(int[] a,int l, int mid, int h){
+    int i=l, j=mid+1, k=l;//
+    int[] b=new int[a.length];//
+    while(i<=mid && j<=h){
+      if(a[i]<a[j]){
+        b[k++]=a[i++];
+      }else{
+        b[k++]=a[j++];
+      }
+    }
+    
+    for(;i<=mid;i++){
+      b[k++]=a[i];
+    }
+    for(;j<=h;j++){
+      b[k++]=a[j];
+    }
+    
+    //copying back to a and return a
+    for(int x=l;x<=h;x++){// like x=0; x<a/b.length;x++
+      a[x]=b[x];
+    }
+    return a;
+  }
+  
+}
